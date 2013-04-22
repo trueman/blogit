@@ -58,8 +58,9 @@ module Blogit
     # = Instance Methods =
     # ====================
 
+    require 'chinese_pinyin'
     def to_param
-      "#{id}-#{title.parameterize}"
+      "#{id}-#{Pinyin.t(title, '-')}"
     end
 
     # If there's a current blogger and the display name method is set, returns the blogger's display name

@@ -1,3 +1,13 @@
+<div class="row">
+  <div class="span12">
+    <div class="page-header">
+      <h2>
+        <i class="icon-book"></i> 日志 
+        <small> 每天我们都在进步一点 </small>
+      </h2>
+    </div>
+  </div>
+</div>
 <%= login_required class: "actions", id: "new_blog_post_link" do %>
   <%= link_to t(:new_blog_post, scope: 'blogit.posts'), new_post_path %>
 <% end %>
